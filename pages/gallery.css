@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fefcf5;
+  color: #1e2a2e;
+}
+
+.three_wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.three_logo-center {
+  text-align: center;
+  padding: 32px 0 24px;
+  border-bottom: 2px solid #b68b40;
+  margin-bottom: 40px;
+}
+
+.three_logo {
+  font-size: 32px;
+  font-weight: 800;
+  color: #3e5a3a;
+  letter-spacing: 1px;
+
+  display: inline-block;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #2c4b2c, #5a3e1a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+}
+
+.three_container {
+    display: flex;
+    gap: 15px;
+}
+
+.three_card {
+    flex: 1;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.three_card.active {
+    flex: 3;
+}
+
+.three_card:not(.active) {
+    filter: brightness(0.7);
+}
+
+.three_card img {
+    width: 100%;
+    display: block;
+}
+
+.three_content {
+    padding: 15px;
+}
+
+.three_content h3 {
+    margin-bottom: 10px;
+}
+
+.three_content p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+
+
+    .three_footer {
+      background: #1f2c24;
+      color: #e2e0d4;
+      padding: 48px 32px 40px;
+      margin-top: 40px;
+      border-top: 1px solid #3b4a3c;
+    }
+
+    .three_footer-columns {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 32px;
+    }
+
+    .three_footer-col {
+      flex: 1;
+      min-width: 160px;
+    }
+
+    .three_footer-col h5 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #f2e3c9;
+      margin-bottom: 20px;
+      letter-spacing: 0.3px;
+    }
+
+    .three_footer-col a {
+      display: block;
+      color: #cdd5c4;
+      text-decoration: none;
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    .three_footer-col a:hover {
+      color: #f5e7cf;
+      text-decoration: underline;
+    }
+
+    .three_newsletter-label {
+      font-weight: 600;
+      margin-bottom: 6px;
+      font-size: 14px;
+      color: #e7dbbc;
+    }
+
+    .three_newsletter-text {
+      font-size: 13px;
+      margin-bottom: 20px;
+      color: #b9c2ae;
+      line-height: 1.4;
+    }
+
+    .subscribe-form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .subscribe-form input {
+      flex: 1;
+      padding: 10px 14px;
+      border: none;
+      border-radius: 60px;
+      background: #2c3b32;
+      color: #ffffff;
+      font-family: inherit;
+      font-size: 14px;
+      outline: none;
+    }
+
+    .subscribe-form input::placeholder {
+      color: #9aaf9a;
+    }
+
+    .subscribe-form button {
+      background: #c7a45b;
+      border: none;
+      padding: 8px 18px;
+      border-radius: 60px;
+      font-weight: 600;
+      font-size: 14px;
+      color: #1f2c24;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .subscribe-form button:hover {
+      background: #ddb76e;
+    }
+
+    @media (max-width: 800px) {
+      .gallery-title {
+        font-size: 28px;
+      }
+      .footer-columns {
+        flex-direction: column;
+        gap: 32px;
+      }
+      .gallery-grid {
+        gap: 20px;
+      }
+      .gallery-page {
+        padding: 0 16px 40px;
+      }
+    }
